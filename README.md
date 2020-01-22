@@ -18,6 +18,7 @@ ubuntuなのだからいけるかな
 少なくともus3poutに関しては下記のスペックで余裕です。\
 cpu
 >Intel Pentium B940, 2.0GHz
+
 memory
 >2GB
 
@@ -60,8 +61,10 @@ rec fsusb2 n
 
 ## ------再生方法
 
-
+nhk
 >recfsusb2n --b25 27 - - | vlc --quiet -
+
+nhk bs
 >recfsusb2n --b25 101 - - | vlc --quiet -
 
 

@@ -14,6 +14,12 @@
 ubuntuなのだからいけるかな
 と思ったが、
 無理でした。
+ちなみに他チューナー製品などで、cpuのスペックはCorei3以上と、ゲーミングPC並を要求だのとのことで危惧していたが
+少なくともus3poutに関しては下記のスペックで余裕です。\
+cpu
+>Intel Pentium B940, 2.0GHz
+memory
+>2GB
 
 
 ## ------ハードの確認
@@ -55,7 +61,8 @@ rec fsusb2 n
 ## ------再生方法
 
 
->recfsusb2n -b 27 - - | vlc --quiet -
+>recfsusb2n --b25 27 - - | vlc --quiet -
+>recfsusb2n --b25 101 - - | vlc --quiet -
 
 
 保存後に再生でもいいが、単に視聴するのみであれば

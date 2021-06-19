@@ -66,7 +66,10 @@ IBM z/Architecture	-> arm64
 
 debから入れましょう。
 
-
+@これ、普通にapt install pcscd でいけたのか・・？
+pcscdも必要。
+otherwise,
+error fufufu.
 
 
 chijou tv pay tvの文字を確認

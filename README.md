@@ -28,7 +28,7 @@ lsusb
 511/
 045
 
-@ubu20だとudevでゴニャゴニャやる必要はなかった。
+@ubu20だとudevでゴニャゴニャやる必要はなかった。  
 @か、ﾊｰﾄﾞの事情か？・・わからぬが。
 
 刺したら、すぐ出た。
@@ -46,7 +46,7 @@ sudo add-apt-repository universe
 しないと
 unable to locate pacman.
 
-@omg, universeはすでに指定されているとのこと。
+@omg, universeはすでに指定されているとのこと。  
 しかしなおも。
 unable to locate pacman.
 フォウ・・・・・・
@@ -66,18 +66,18 @@ IBM z/Architecture	-> arm64
 
 debから入れましょう。  
 
-@これ、普通にapt install pcscd でいけたのか・・？
-pcscdも必要。
-otherwise,
+@これ、普通にapt install pcscd でいけたのか・・？  
+pcscdも必要。  
+otherwise,  
 error fufufu.
 
 
-chijou tv pay tvの文字を確認
-カードの裏表が逆だと
+chijou tv pay tvの文字を確認  
+カードの裏表が逆だと  
 I cannot confirm
 
 @カードリーダーの代わりにus3poutを使うことにより、カードリーダー買わなくてよくしようと思ったが、
-失敗。
+失敗。  
 @カードリーダを使わない場合、復号化に失敗するが、データ自体は作成可能。
 後程b25で復号することも。
 

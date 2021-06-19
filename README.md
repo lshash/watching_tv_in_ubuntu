@@ -85,27 +85,30 @@ I cannot confirm
 
 ## ーーーーーー主要ソフトインストール
 
-b25
 
 ---------------------------------------------------this is main func.
 rec fsusb2 n
 
 https://github.com/epgdatacapbon/recfsusb2n
 
-sudo apt install gcc
-sudo apt install make
-srcフォルダでmake
+sudo apt install gcc  
+sudo apt install make  
+srcフォルダでmake  
 
-executable
+executable  
 
-上記のﾛｹｰｼｮﾝにexecutableはない
-なにやらwarningやらが結構でるが、executableはできており、
-./recfsus~でいける
-
-
---------------------------------------------
+上記のﾛｹｰｼｮﾝにexecutableはない  
+なにやらwarningやらが結構でるが、executableはできており、  
+./recfsus~でいける  
 
 
+--------------------------------------------this is also very important meterial.
+b25
+
+
+
+
+----------------------------------------------------------------------
 
 
 ## ------再生方法

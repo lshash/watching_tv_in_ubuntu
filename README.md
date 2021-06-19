@@ -92,7 +92,8 @@ rec fsusb2 n
 
 https://github.com/epgdatacapbon/recfsusb2n
 
-install gcc
+sudo apt install gcc
+sudo apt install make
 srcフォルダでmake
 
 executable

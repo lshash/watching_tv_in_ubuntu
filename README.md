@@ -46,6 +46,26 @@ sudo add-apt-repository universe
 しないと
 unable to locate pacman.
 
+@omg, universeはすでに指定されているとのこと。
+しかしなおも。
+unable to locate pacman.
+フォウ・・・・・・
+
+debからやる。
+archetectureは、
+
+Intel x86-based	-> i386	 	 
+AMD64 & Intel 64	-> amd64	 	 
+ARM with hardware FPU	-> armhf	multiplatform	generic multiplatform for LPAE-capable systems	generic-lpae
+64bit ARM	-> arm64	 	 
+IBM POWER Systems	-> ppc64el	IBM POWER8 and newer machines	 
+IBM z/Architecture	-> arm64
+
+@なぜ、arm64　２つあるのだ、　おい！
+@amd64ですね。
+
+debから入れましょう。
+
 
 
 

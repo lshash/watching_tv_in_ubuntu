@@ -99,6 +99,8 @@ srcフォルダでmake
 executable
 
 上記のﾛｹｰｼｮﾝにexecutableはない
+なにやらwarningやらが結構でるが、executableはできており、
+./recfsus~でいける
 
 
 --------------------------------------------

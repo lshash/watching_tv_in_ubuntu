@@ -28,10 +28,24 @@ lsusb
 511/
 045
 
+@ubu20だとudevでゴニャゴニャやる必要はなかった。
+刺したら、すぐ出た。
+lsusb
+
 
 2.\
 周辺ソフトインストール\
 pcsc scanなど
+
+@ubu20だとpcsc-toolsはuniverseなので、
+
+sudo add-apt-repository universe
+
+しないと
+unable to locate pacman.
+
+
+
 
 chijou tv pay tvの文字を確認
 カードの裏表が逆だと

@@ -106,6 +106,12 @@ executableフォウ
 --------------------------------------------c'est aussi un materiau tre important.  
 b25
 
+sudo apt-get install git make gcc g++ pkg-config libpcsclite-dev pcscd
+
+git clone https://github.com/epgdatacapbon/libaribb25
+cd libaribb25
+make
+sudo make install
 
 
 

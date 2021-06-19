@@ -102,7 +102,7 @@ executable
 ./recfsus~でいける  
 
 
---------------------------------------------this is also very important meterial.
+--------------------------------------------c'est aussi un materiau tre important.  
 b25
 
 

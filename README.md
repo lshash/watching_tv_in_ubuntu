@@ -123,16 +123,173 @@ sudo make install
 
 ----------------------------------------------------------------------
 
+## ------デバイス紐付
+
+
+
+１個ずつ、見ていこうか・・・・・・
+
+---------------------------------------------------------
+lsusb
+
+Bus 001 Device 004: ID 0511:0045 N'Able (DataBook) Technologies, Inc. 
+
+
+
+n'able databookが511になっていなければならない
+いや、すでになっているが・・
+
+
+
+
+
+-------------------------------------------------------------------
+video groupがなければ、作成し、
+そこに自分のユーザーを入れると。
+
+compgen -g
+
+group videoはすでに存在だが、
+
+
+sudo apt install members
+members video
+
+だれもいない
+自分のユーザーは入っていない
+
+
+あとでいれる
+------------------------------------
+
+
+
+tuner ruleとやらに、
+なんか入れると、なるらしい（video groupとusb deviceの紐づけか・・・・・・）
+
+
+０５１１，0029となっているが、
+私の場合は、
+0511, 0045
+とする。
+subsystem, devtype, modeは変えんで良い
+
+
+
+
+
+---------------------------------------------------
+
+
+
+
+/lib/udev/rules.d/
+/etc/udev/rules.d/
+
+のどちらに入れるかは、
+
+
+
+{ouch}:/etc/udev$ 
+{ouch}:/etc/udev$ dir
+hwdb.d	rules.d  udev.conf
+{ouch}:/etc/udev$ cd rules.d/
+{ouch}:/etc/udev/rules.d$ dir
+70-persistent-net.rules  70-snap.snapd.rules
+70-snap.chromium.rules	 91-tuner.rules
+{ouch}:/etc/udev/rules.d$ 
+{ouch}:/etc/udev/rules.d$ 
+{ouch}:/etc/udev/rules.d$ 
+{ouch}:/etc/udev/rules.d$ cat 91-tuner.rules 
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0045", MODE="0664", GROUP="video"
+{ouch}:/etc/udev/rules.d$ 
+
+
+過去の私の端末の実績値から、
+
+etc udev
+を採用する。
+
+ここに、つまりusbdevice= sampaqun　とvideo group
+
+の紐づけを行うということだ。
+
+
+自分のﾕｰｻﾞｰはvideo group
+に追加するので
+
+OKということになる。
+
+
+
+
+$ sudo gpasswd -a {OUCH!} video //add user to Group called video
+
+これで、video group
+members video
+が０件だったのが、
+自分のみが加わることになる。
+ﾌｫｳ
+
+
+
+
+
+$ sudo vi /etc/udev/rules.d/90-sampa_loader.rules // file add and edit.
+
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0045", MODE="0664", GROUP="video"
+
+
+i for edit mode
+ctl shift v for paste
+
+esc for command mode
+
+:
+x
+enter
+
+
+------------how to del line
+
+esc to command mode
+dd
+enter
+
+
+----------------------
+reboot needed!
+
+
+----------------------------------------------------------------------
+
+
+sudo apt-get install g++
+sudo apt-get install libboost-thread-dev libboost-filesystem-dev
+
+boostはよくわからんが、
+入れないで
+fuuum
+となったら、
+入れて、
+fuuuuuum
+となる予定。
+
+
+
+
+
+
 
 ## ------再生方法
 typical error.
 
 
-./recfsusb2n: unrecognized option '--b25'
-can't open usbdevfile to read/write '/dev/bus/usb/001/004', ERR=13
+./recfsusb2n: unrecognized option '--b25'  
+can't open usbdevfile to read/write '/dev/bus/usb/001/004', ERR=13  
 No device can be used.
 
-
+fou, デバイス紐付がなされていないな、さては。
 
 
 

@@ -71,6 +71,9 @@ pcscdも必要。
 otherwise,  
 error fufufu.
 
+CardEstablishContext: Service not available.  
+
+
 
 chijou tv pay tvの文字を確認  
 カードの裏表が逆だと  
@@ -119,7 +122,20 @@ sudo make install
 
 
 ## ------再生方法
+typical error.
 
+
+./recfsusb2n: unrecognized option '--b25'
+can't open usbdevfile to read/write '/dev/bus/usb/001/004', ERR=13
+No device can be used.
+
+
+
+
+
+
+
+------------------------------------------------
 nhk
 >recfsusb2n --b25 27 - - | vlc --quiet -
 

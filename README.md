@@ -183,29 +183,29 @@ subsystem, devtype, modeは変えんで良い
 
 
 
-/lib/udev/rules.d/
-/etc/udev/rules.d/
+/lib/udev/rules.d/  
+/etc/udev/rules.d/  
 
-のどちらに入れるかは、
-
-
-
-{ouch}:/etc/udev$ 
-{ouch}:/etc/udev$ dir
-hwdb.d	rules.d  udev.conf
-{ouch}:/etc/udev$ cd rules.d/
-{ouch}:/etc/udev/rules.d$ dir
-70-persistent-net.rules  70-snap.snapd.rules
-70-snap.chromium.rules	 91-tuner.rules
-{ouch}:/etc/udev/rules.d$ 
-{ouch}:/etc/udev/rules.d$ 
-{ouch}:/etc/udev/rules.d$ 
-{ouch}:/etc/udev/rules.d$ cat 91-tuner.rules 
-SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0045", MODE="0664", GROUP="video"
-{ouch}:/etc/udev/rules.d$ 
+のどちらに入れるかは、  
 
 
-過去の私の端末の実績値から、
+
+{ouch}:/etc/udev$  
+{ouch}:/etc/udev$ dir  
+hwdb.d	rules.d  udev.conf  
+{ouch}:/etc/udev$ cd rules.d/  
+{ouch}:/etc/udev/rules.d$ dir  
+70-persistent-net.rules  70-snap.snapd.rules  
+70-snap.chromium.rules	 91-tuner.rules  
+{ouch}:/etc/udev/rules.d$  
+{ouch}:/etc/udev/rules.d$  
+{ouch}:/etc/udev/rules.d$  
+{ouch}:/etc/udev/rules.d$ cat 91-tuner.rules  
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0045", MODE="0664", GROUP="video"  
+{ouch}:/etc/udev/rules.d$  
+
+
+過去の私の端末の実績値から、  
 
 etc udev
 を採用する。
@@ -259,6 +259,18 @@ enter
 
 ----------------------
 reboot needed!
+
+
+
+
+----------------------
+ﾌｫﾌｫｳ！
+device can't be opend.  
+は解消。  
+しかし、
+/recfsusb2n: unrecognized option '--b25'
+
+おいーツ
 
 
 ----------------------------------------------------------------------

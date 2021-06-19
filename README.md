@@ -273,6 +273,26 @@ device can't be opend.
 おいーツ
 
 
+recfsusb2n 0.1.13 beta 20170122_0026, (GPL) 2016 trinity19683
+Usage: recfsusb2n [-v] [--b25] [--dev devfile] [--tsid n] [--sid n1,n2,...] channel recsec destfile
+
+
+recfsusb2n 0.1.13 beta 20170122_0026, (GPL) 2016 trinity19683
+Usage: ./recfsusb2n [-v] [--dev devfile] [--tsid n] [--sid n1,n2,...] channel recsec destfile
+
+fofofou, どうやら、　ｵﾌﾟｼｮﾝが
+はいっていないかのようですねぇ・・・・・・
+
+入れ直し
+
+make B25=1
+
+at last, 
+sudo make install
+
+ですかな？
+
+
 ----------------------------------------------------------------------
 
 

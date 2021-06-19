@@ -90,14 +90,15 @@ I cannot confirm
 rec fsusb2 n
 
 https://github.com/epgdatacapbon/recfsusb2n
+上記のﾛｹｰｼｮﾝにexecutableはない  
 
+readmeに書いてある通り、  
 sudo apt install gcc  
 sudo apt install make  
 srcフォルダでmake  
 
-executable  
+executableフォウ  
 
-上記のﾛｹｰｼｮﾝにexecutableはない  
 なにやらwarningやらが結構でるが、executableはできており、  
 ./recfsus~でいける  
 

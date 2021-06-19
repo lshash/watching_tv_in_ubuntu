@@ -89,7 +89,7 @@ I cannot confirm
 ---------------------------------------------------this is main func.
 rec fsusb2 n
 
-https://github.com/epgdatacapbon/recfsusb2n
+https://github.com/epgdatacapbon/recfsusb2n  
 上記のﾛｹｰｼｮﾝにexecutableはない  
 
 readmeに書いてある通り、  

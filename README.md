@@ -54,17 +54,17 @@ unable to locate pacman.
 debからやる。
 archetectureは、
 
-Intel x86-based	-> i386	 	 
-AMD64 & Intel 64	-> amd64	 	 
-ARM with hardware FPU	-> armhf	multiplatform	generic multiplatform for LPAE-capable systems	generic-lpae
-64bit ARM	-> arm64	 	 
-IBM POWER Systems	-> ppc64el	IBM POWER8 and newer machines	 
-IBM z/Architecture	-> arm64
+Intel x86-based	-> i386  
+AMD64 & Intel 64	-> amd64  
+ARM with hardware FPU	-> armhf	multiplatform	generic multiplatform for LPAE-capable systems	generic-lpae  
+64bit ARM	-> arm64  
+IBM POWER Systems	-> ppc64el	IBM POWER8 and newer machines  
+IBM z/Architecture	-> arm64  
 
-@なぜ、arm64　２つあるのだ、　おい！
-@amd64ですね。
+@なぜ、arm64　２つあるのだ、　おい！  
+@amd64ですね。  
 
-debから入れましょう。
+debから入れましょう。  
 
 @これ、普通にapt install pcscd でいけたのか・・？
 pcscdも必要。

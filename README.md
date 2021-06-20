@@ -362,11 +362,11 @@ Mpeg２TS→Mpeg4へトランスコードすれば容量削減　するらしい
 イマイチわからぬ
 
 
-recfsusb2n --b25 101 30 ./x.ts
-recfsusb2n --b25 101 30 ./x.ts
-recfsusb2n --b25 101 30 ./x.ts
-recfsusb2n --b25 101 30 ./x.ts
-recfsusb2n --b25 101 30 ./x.ts
+recfsusb2n --b25 101 30 ./x.ts  
+recfsusb2n --b25 101 30 ./x.ts  
+recfsusb2n --b25 101 30 ./x.ts  
+recfsusb2n --b25 101 30 ./x.ts  
+recfsusb2n --b25 101 30 ./x.ts  
 
 例えばこういう
 バッチをつくったら、
@@ -377,12 +377,17 @@ recfsusb2n --b25 101 30 ./x.ts
 
 再生する側も
 
-vlc ./x.ts
-vlc ./x.ts
-vlc ./x.ts
-vlc ./x.ts
-vlc ./x.ts
+vlc ./x.ts  
+vlc ./x.ts  
+vlc ./x.ts  
+vlc ./x.ts  
+vlc ./x.ts  
 
 こんな感じかなー
+
+std in fd/0
+をあとから保存したいのぉー
+
+
 
 

@@ -362,11 +362,11 @@ Mpeg２TS→Mpeg4へトランスコードすれば容量削減　するらしい
 イマイチわからぬ
 
 
-recfsusb2n --b25 101 30 ./x.ts  
-recfsusb2n --b25 101 30 ./x.ts  
-recfsusb2n --b25 101 30 ./x.ts  
-recfsusb2n --b25 101 30 ./x.ts  
-recfsusb2n --b25 101 30 ./x.ts  
+recfsusb2n --b25 101 30 ./x1.ts  
+recfsusb2n --b25 101 30 ./x2.ts  
+recfsusb2n --b25 101 30 ./x3.ts  
+recfsusb2n --b25 101 30 ./x4.ts  
+recfsusb2n --b25 101 30 ./x5.ts  
 
 例えばこういう
 バッチをつくったら、
@@ -377,16 +377,28 @@ recfsusb2n --b25 101 30 ./x.ts
 
 再生する側も
 
-vlc ./x.ts  
-vlc ./x.ts  
-vlc ./x.ts  
-vlc ./x.ts  
-vlc ./x.ts  
+x1.tsが保存されたら、２秒後ぐらいで別スレッドから
+
+vlc ./x1.ts  
+
+x1が再生されおわる頃には
+x2が保存され、x3作成中なわけだから、
+
+
+vlc ./x2.ts  
+
+x2が再生されおわる頃には
+x3が保存され、x4作成中なわけだから、
+
+
+vlc ./x3.ts  
+vlc ./x4.ts  
+vlc ./x5.ts  
 
 こんな感じかなー
 
 std in fd/0
-をあとから保存したいのぉー
+をあとから保存したいのぉー（無理）（なのか？）
 
 
 
